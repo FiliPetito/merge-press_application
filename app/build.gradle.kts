@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.ksp)
 }
 
+
 android {
     namespace = "it.fpetito.merge_press_application"
     compileSdk = 36
@@ -56,15 +57,6 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.compose.material.icons.extended)
-
-    // PDFBox-Android
-    implementation(libs.pdfbox.android)
-
-    // Coroutines
-    implementation(libs.kotlinx.coroutines.android)
-
-    // Coil
-    implementation(libs.coil.compose)
 
     ksp(libs.hilt.compiler)
     ksp(libs.mapstruct.processor)
